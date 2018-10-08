@@ -1,6 +1,6 @@
 {
-  "name": "opentracing",
-  "version": "0.14.2",
+  "name": "@rmfitzpatrick/opentracing",
+  "version": "0.14.2sm0",
   "engines": {
     "node": ">=0.10"
   },
@@ -24,7 +24,8 @@
     "build": "tsc -p .",
     "watch": "tsc -w -p .",
     "typedoc": "typedoc --out typedoc --tsconfig tsconfig.json --mode file",
-    "example": "node lib/examples/demo/demo.js"
+    "example": "node lib/examples/demo/demo.js",
+    "postinstall": "scripts/postinstall.sh"
   },
   "repository": {
     "type": "git",
